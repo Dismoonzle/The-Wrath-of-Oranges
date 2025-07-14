@@ -1,0 +1,20 @@
+# This file will automatically update with entries for new content after a build and reload.
+
+Items: {
+	WhatIsThis: {
+		DisplayName: What Is This
+		Tooltip: Develop by Dismoon
+	}
+
+	Ooo: {
+		DisplayName: Ooo
+		Tooltip: ""
+	}
+}
+
+NPCs.Oranger.DisplayName: Oranger
+
+Projectiles: {
+	As.DisplayName: As
+	Qw.DisplayName: Qw
+}
