@@ -8,13 +8,28 @@ Items: {
 
 	Ooo: {
 		DisplayName: Ooo
-		Tooltip: ""
+		Tooltip: Summon the Oranger thank for your support
+	}
+
+	RedRevolution: {
+		DisplayName: Red Revolution
+		Tooltip: WIN
+	}
+
+	ProductionOrder: {
+		DisplayName: Production Order
+		Tooltip: Nice!
 	}
 }
 
-NPCs.Oranger.DisplayName: Oranger
+NPCs: {
+	Oranger.DisplayName: Oranger
+	B29.DisplayName: B-29
+}
 
 Projectiles: {
 	As.DisplayName: As
 	Qw.DisplayName: Qw
+	BulletHighVelocity.DisplayName: Bullet High Velocity
+	FlameBomb.DisplayName: Flame Bomb
 }

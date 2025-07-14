@@ -2,13 +2,21 @@ using System;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
 
 namespace dododo.NPCs
 {
     [AutoloadBossHead]
+   
     public class Oranger : ModNPC
     {
+        public override void ModifyNPCLoot(NPCLoot npcLoot)
+        {
+            // »ù´¡µôÂäÎï
+            npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<Content.Items.RedRevolution>(),1)); // 100%µôÂä³àÉ«¸ïÃü
+            npcLoot.Add(ItemDropRule.Common(ItemID.GoldCoin, 1, 5, 10)); // 100%µôÂä5-10½ð±Ò
+        }
         // AI½×¶ÎÃ¶¾Ù
         private enum AIPhase
         {
@@ -40,11 +48,11 @@ namespace dododo.NPCs
 
         public override void SetDefaults()
         {
-            NPC.width = 80;
-            NPC.height = 80;
-            NPC.lifeMax = 12000;
+            NPC.width = 600;
+            NPC.height = 600;
+            NPC.lifeMax = 22000;
             NPC.defense = 30;
-            NPC.damage = 50;
+            NPC.damage = 80;
             NPC.knockBackResist = 0f;
             NPC.noGravity = true;
             NPC.noTileCollide = true;
